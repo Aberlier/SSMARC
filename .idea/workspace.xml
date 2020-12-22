@@ -7,18 +7,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a758237-d958-4e49-9af3-2f3e3375edbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/dao/DomainAdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/dao/DomainEmployerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/dao/DomainUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/entity/DomainAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/entity/DomainEmployer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/entity/DomainUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DomainAdminMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DomainEmployerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DomainUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/security/AccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/security/EncryptKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/security/LoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/security/ResultModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/security/ShiroRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/utils/CryptographyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/dao/DomainAdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/dao/DomainEmployerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/dao/DomainUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/entity/DomainAdmin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/entity/DomainEmployer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/entity/DomainUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/security/AccountException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/security/EncryptKit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/security/LoginHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/security/ResultModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/security/ShiroRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/utils/CryptographyUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/com/ssmarc/utils/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/mapper/DomainAdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/mapper/DomainEmployerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/mapper/DomainUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/classes/spring-shiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/mybatis-3.2.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/mysql-connector-java-5.1.35.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/shiro-core-1.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/shiro-spring-1.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/shiro-web-1.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/slf4j-api-1.7.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/slf4j-log4j12-1.7.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-aop-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-beans-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-context-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-context-support-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-core-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-expression-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-jdbc-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-orm-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-oxm-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-test-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-tx-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-web-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/lib/spring-webmvc-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMARC/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/dao/DomainAdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/dao/DomainEmployerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/dao/DomainUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/entity/DomainAdmin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/entity/DomainEmployer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/entity/DomainUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/security/AccountException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/security/EncryptKit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/security/LoginHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/security/ResultModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/security/ShiroRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/utils/CryptographyUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ssmarc/utils/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DomainAdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DomainEmployerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DomainUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-shiro.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssmarc/dao/DomainAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssmarc/dao/DomainAdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DomainAdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DomainAdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DomainUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DomainUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <list id="67867cbe-8b53-487e-ba89-2fe62d83baf4" name="Revert &quot;Revert &quot;Update README.md&quot;&quot;-2" comment="Revert &quot;Revert &quot;Update README.md&quot;&quot;&#10;&#10;This reverts commit e8c2568c" />
     <list id="eb2fb55e-fa67-4397-9008-18fd97f048e8" name="Revert &quot;Update README.md&quot;" comment="Revert &quot;Update README.md&quot;&#10;&#10;This reverts commit 162d720e" />
@@ -46,6 +133,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,11 +185,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shirodemo" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.5316642" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
@@ -189,6 +278,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -216,7 +310,9 @@
       <workItem from="1608559263961" duration="516000" />
       <workItem from="1608559805220" duration="230000" />
       <workItem from="1608560058673" duration="110000" />
-      <workItem from="1608560194735" duration="1576000" />
+      <workItem from="1608560194735" duration="2220000" />
+      <workItem from="1608596577037" duration="11626000" />
+      <workItem from="1608613029674" duration="14588000" />
     </task>
     <task id="LOCAL-00001" summary="搭建SSM环境与底层基础架构">
       <created>1608209636011</created>
@@ -288,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608211806498</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="增加generator工具">
+      <created>1608562378045</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608562378045</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +420,8 @@
     <MESSAGE value="最终整合完整版SSM底层环境按搭建" />
     <MESSAGE value="Revert &quot;Update README.md&quot;&#10;&#10;This reverts commit 162d720e" />
     <MESSAGE value="Revert &quot;Revert &quot;Update README.md&quot;&quot;&#10;&#10;This reverts commit b2d87c67" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Revert &quot;Update README.md&quot;&quot;&#10;&#10;This reverts commit b2d87c67" />
+    <MESSAGE value="增加generator工具" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加generator工具" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Project_Structure" timestamp="1608559704751">
@@ -328,90 +432,102 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="380" y="91" key="#Tomcat_Server/0.0.1536.834@0.0.1536.834" timestamp="1608170586143" />
-    <state x="243" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608175572888">
+    <state x="518" y="183" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1608608837971">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="243" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1608175572888" />
+    <state x="518" y="183" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1608608837971" />
+    <state x="243" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608635747900">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="243" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1608635747900" />
     <state x="472" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608555930130">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="472" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1608555930130" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1608211804742">
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608600600661">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1608211804742" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1608600600661" />
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1608562375846">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1608562375846" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1608211090295">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1608211090295" />
-    <state x="568" y="173" key="FileChooserDialogImpl" timestamp="1608559699228">
+    <state x="568" y="173" key="FileChooserDialogImpl" timestamp="1608603303030">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="568" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608559699228" />
-    <state width="1338" height="211" key="GridCell.Tab.0.bottom" timestamp="1608561034562">
+    <state x="568" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608603303030" />
+    <state width="1323" height="206" key="GridCell.Tab.0.bottom" timestamp="1608643085263">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1338" height="211" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608561034562" />
-    <state width="1338" height="211" key="GridCell.Tab.0.center" timestamp="1608561034562">
+    <state width="1323" height="206" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608643085263" />
+    <state width="1323" height="206" key="GridCell.Tab.0.center" timestamp="1608643085263">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1338" height="211" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608561034562" />
-    <state width="1338" height="211" key="GridCell.Tab.0.left" timestamp="1608561034561">
+    <state width="1323" height="206" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608643085263" />
+    <state width="1323" height="206" key="GridCell.Tab.0.left" timestamp="1608643085263">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1338" height="211" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608561034561" />
-    <state width="1338" height="211" key="GridCell.Tab.0.right" timestamp="1608561034562">
+    <state width="1323" height="206" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608643085263" />
+    <state width="1323" height="206" key="GridCell.Tab.0.right" timestamp="1608643085263">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1338" height="211" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608561034562" />
-    <state width="858" height="288" key="GridCell.Tab.1.bottom" timestamp="1608212045916">
+    <state width="1323" height="206" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608643085263" />
+    <state width="847" height="284" key="GridCell.Tab.1.bottom" timestamp="1608642937945">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.1.center" timestamp="1608212045915">
+    <state width="847" height="284" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608642937945" />
+    <state width="847" height="284" key="GridCell.Tab.1.center" timestamp="1608642937945">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608212045915" />
-    <state width="858" height="288" key="GridCell.Tab.1.left" timestamp="1608212045915">
+    <state width="847" height="284" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608642937945" />
+    <state width="847" height="284" key="GridCell.Tab.1.left" timestamp="1608642937945">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608212045915" />
-    <state width="858" height="288" key="GridCell.Tab.1.right" timestamp="1608212045915">
+    <state width="847" height="284" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608642937945" />
+    <state width="847" height="284" key="GridCell.Tab.1.right" timestamp="1608642937945">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608212045915" />
-    <state width="858" height="288" key="GridCell.Tab.2.bottom" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608642937945" />
+    <state width="847" height="284" key="GridCell.Tab.2.bottom" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.2.center" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.2.center" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.2.left" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.2.left" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.2.right" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.2.right" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.3.bottom" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.3.bottom" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.3.center" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.3.center" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.3.left" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.3.left" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
-    <state width="858" height="288" key="GridCell.Tab.3.right" timestamp="1608212045916">
+    <state width="847" height="284" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state width="847" height="284" key="GridCell.Tab.3.right" timestamp="1608642937946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="858" height="288" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1608212045916" />
+    <state width="847" height="284" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1608642937946" />
+    <state x="299" y="73" key="Maven.ArtifactSearchDialog" timestamp="1608610845259">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="299" y="73" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1608610845259" />
     <state x="147" y="72" key="MergeDialog" timestamp="1608211222480">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -420,26 +536,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="477" y="133" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1608211222493" />
-    <state x="536" y="128" key="RollbackChangesDialog" timestamp="1608211720552">
+    <state x="536" y="128" key="RollbackChangesDialog" timestamp="1608640428009">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="536" y="128" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1608211720552" />
-    <state x="250" y="46" key="SettingsEditor" timestamp="1608559676166">
+    <state x="536" y="128" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1608640428009" />
+    <state x="250" y="46" key="SettingsEditor" timestamp="1608600368672">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="250" y="46" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1608559676166" />
+    <state x="250" y="46" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1608600368672" />
     <state x="614" y="333" key="VCS.ChangelistChooser" timestamp="1608210867592">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="614" y="333" key="VCS.ChangelistChooser/0.0.1536.834@0.0.1536.834" timestamp="1608210867592" />
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1608211881244">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1608562382654">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1608211881244" />
-    <state x="449" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1608560203613">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1608562382654" />
+    <state x="449" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1608613029539">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="449" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1608560203613" />
+    <state x="449" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1608613029539" />
     <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608209999300">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -452,9 +568,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="588" y="282" key="git4idea.rebase.GitRebaseDialog/0.0.1536.834@0.0.1536.834" timestamp="1608209790101" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608556569807">
+    <state x="430" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1608633486653">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608556569807" />
+    <state x="430" y="154" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608633486653" />
   </component>
 </project>

@@ -11,6 +11,8 @@ public interface DomainAdminMapper {
 
     DomainAdmin selectByPrimaryKey(Integer adminId);
 
+    DomainAdmin selectByAdminName(String adminName);
+
     int updateByPrimaryKeySelective(DomainAdmin record);
 
     int updateByPrimaryKey(DomainAdmin record);

@@ -17,12 +17,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-        <srping.version>4.0.2.RELEASE</srping.version>
+        <srping.version>4.3.2.RELEASE</srping.version>
         <mybatis.version>3.2.8</mybatis.version>
         <slf4j.version>1.7.12</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
         <druid.version>1.0.9</druid.version>
-        <generator.version>1.3.6</generator.version>
+        <shiro.version>1.2.4</shiro.version>
+
     </properties>
 
     <dependencies>
@@ -149,7 +150,22 @@
             <artifactId>druid</artifactId>
             <version>${druid.version}</version>
         </dependency>
-
+        <!--引入shiro包类文件-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
