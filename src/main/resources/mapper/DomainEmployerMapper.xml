@@ -12,17 +12,24 @@
       <arg column="employer_postname" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="employer_field" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="employer_desc" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="employer_role" javaType="java.lang.Integer" jdbcType="INTEGER" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
     employer_id, employer_name, employer_age, employer_idcard, employer_address, employer_telnum, 
-    employer_postname, employer_field, employer_desc
+    employer_postname, employer_field, employer_desc, employer_role
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from tb_employer
     where employer_id = #{employerId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByEmployerName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_employer
+    where employer_name = #{employerName,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tb_employer
@@ -31,12 +38,12 @@
   <insert id="insert" parameterType="com.ssmarc.entity.DomainEmployer">
     insert into tb_employer (employer_id, employer_name, employer_age, 
       employer_idcard, employer_address, employer_telnum, 
-      employer_postname, employer_field, employer_desc
-      )
+      employer_postname, employer_field, employer_desc, 
+      employer_role)
     values (#{employerId,jdbcType=INTEGER}, #{employerName,jdbcType=VARCHAR}, #{employerAge,jdbcType=VARCHAR}, 
       #{employerIdcard,jdbcType=VARCHAR}, #{employerAddress,jdbcType=VARCHAR}, #{employerTelnum,jdbcType=INTEGER}, 
-      #{employerPostname,jdbcType=VARCHAR}, #{employerField,jdbcType=VARCHAR}, #{employerDesc,jdbcType=VARCHAR}
-      )
+      #{employerPostname,jdbcType=VARCHAR}, #{employerField,jdbcType=VARCHAR}, #{employerDesc,jdbcType=VARCHAR}, 
+      #{employerRole,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.ssmarc.entity.DomainEmployer">
     insert into tb_employer
@@ -68,6 +75,9 @@
       <if test="employerDesc != null">
         employer_desc,
       </if>
+      <if test="employerRole != null">
+        employer_role,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="employerId != null">
@@ -96,6 +106,9 @@
       </if>
       <if test="employerDesc != null">
         #{employerDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="employerRole != null">
+        #{employerRole,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -126,6 +139,9 @@
       <if test="employerDesc != null">
         employer_desc = #{employerDesc,jdbcType=VARCHAR},
       </if>
+      <if test="employerRole != null">
+        employer_role = #{employerRole,jdbcType=INTEGER},
+      </if>
     </set>
     where employer_id = #{employerId,jdbcType=INTEGER}
   </update>
@@ -138,7 +154,8 @@
       employer_telnum = #{employerTelnum,jdbcType=INTEGER},
       employer_postname = #{employerPostname,jdbcType=VARCHAR},
       employer_field = #{employerField,jdbcType=VARCHAR},
-      employer_desc = #{employerDesc,jdbcType=VARCHAR}
+      employer_desc = #{employerDesc,jdbcType=VARCHAR},
+      employer_role = #{employerRole,jdbcType=INTEGER}
     where employer_id = #{employerId,jdbcType=INTEGER}
   </update>
 </mapper>

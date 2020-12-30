@@ -9,6 +9,8 @@ public interface DomainUserMapper {
 
     int insertSelective(DomainUser record);
 
+    DomainUser selectByUserName(String userName);
+
     DomainUser selectByPrimaryKey(Integer userId);
 
     int updateByPrimaryKeySelective(DomainUser record);

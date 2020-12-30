@@ -17,9 +17,11 @@ public class DomainUser {
 
     private String userDispatchAddress;
 
+    private String userRole;
+
     private String userOtherDesc;
 
-    public DomainUser(Integer userId, String userName, String userPwd, Integer userTelnum, String userDemand, String userUrgent, String userAddress, String userDispatchAddress, String userOtherDesc) {
+    public DomainUser(Integer userId, String userName, String userPwd, Integer userTelnum, String userDemand, String userUrgent, String userAddress, String userDispatchAddress, String userRole, String userOtherDesc) {
         this.userId = userId;
         this.userName = userName;
         this.userPwd = userPwd;
@@ -28,6 +30,7 @@ public class DomainUser {
         this.userUrgent = userUrgent;
         this.userAddress = userAddress;
         this.userDispatchAddress = userDispatchAddress;
+        this.userRole = userRole;
         this.userOtherDesc = userOtherDesc;
     }
 
@@ -97,6 +100,14 @@ public class DomainUser {
 
     public void setUserDispatchAddress(String userDispatchAddress) {
         this.userDispatchAddress = userDispatchAddress == null ? null : userDispatchAddress.trim();
+    }
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole == null ? null : userRole.trim();
     }
 
     public String getUserOtherDesc() {

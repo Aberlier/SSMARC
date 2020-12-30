@@ -9,6 +9,10 @@
 <%@page import="org.apache.shiro.subject.Subject"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,12 +30,12 @@
             <form id="form" action="#" method="post">
                 <div class="username">
                     <span class="username">账号:</span>
-                    <input type="text" name="username" class="name" placeholder="" required="">
+                    <input type="text" name="userName" class="name" placeholder="" required="">
                     <div class="clearfix"></div>
                 </div>
                 <div class="password-agileits">
                     <span class="username">密码:</span>
-                    <input type="password" name="password" class="password" placeholder="" required="">
+                    <input type="password" name="userPwd" class="password" placeholder="" required="">
                     <div class="clearfix"></div>
                 </div>
                 <div class="rem-for-agile">
@@ -54,15 +58,35 @@
     </div>
 </div>
 </body>
+<script type="text/javascript" src=<%=basePath%>"/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src=<%=basePath%>"/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src=<%=basePath%>"/js/security.js"></script>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script type="text/javascript">
     function login(){
-        $.post("${base}/ssm/shirologin",$("#form").serialize(),function(data){
-            if(data.resultCode == 0){
-                window.location.href = "${base}/ssm/home";
-            }else{
-                alert(data.msg);
+        $.ajax({
+            url: "http://localhost:9527/SSMARC/ssmarc/shirologin",
+            type: "post",
+            data: $("#form").serialize(),
+            dataType: "json",
+            cache: false,
+            xhrFields: {
+                withCredentials: true
+            },
+            beforeSend: function () {
+            },
+            complete: function () {
+            },
+            success: function (result) {
+                if (result.code == 200) {
+                    window.location.href = "index.jsp";
+                } else {
+                    alert(result.msg);
+                }
+            }, error: function (result) {
+                alert("网络连接失败！"+result.resultCode);
             }
-        })
+        });
     }
 </script>
 </html>

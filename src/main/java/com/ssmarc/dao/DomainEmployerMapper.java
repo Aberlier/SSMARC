@@ -9,6 +9,8 @@ public interface DomainEmployerMapper {
 
     int insertSelective(DomainEmployer record);
 
+    DomainEmployer selectByEmployerName(String employerName);
+
     DomainEmployer selectByPrimaryKey(Integer employerId);
 
     int updateByPrimaryKeySelective(DomainEmployer record);

@@ -11,18 +11,25 @@
       <arg column="user_urgent" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="user_address" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="user_dispatch_address" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="user_role" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="user_other_desc" javaType="java.lang.String" jdbcType="VARCHAR" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
     user_id, user_name, user_pwd, user_telnum, user_demand, user_urgent, user_address, 
-    user_dispatch_address, user_other_desc
+    user_dispatch_address, user_role, user_other_desc
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from tb_user
     where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_user
+    where user_name = #{userName,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tb_user
@@ -31,12 +38,12 @@
   <insert id="insert" parameterType="com.ssmarc.entity.DomainUser">
     insert into tb_user (user_id, user_name, user_pwd, 
       user_telnum, user_demand, user_urgent, 
-      user_address, user_dispatch_address, user_other_desc
-      )
+      user_address, user_dispatch_address, user_role, 
+      user_other_desc)
     values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPwd,jdbcType=VARCHAR}, 
       #{userTelnum,jdbcType=INTEGER}, #{userDemand,jdbcType=VARCHAR}, #{userUrgent,jdbcType=VARCHAR}, 
-      #{userAddress,jdbcType=VARCHAR}, #{userDispatchAddress,jdbcType=VARCHAR}, #{userOtherDesc,jdbcType=VARCHAR}
-      )
+      #{userAddress,jdbcType=VARCHAR}, #{userDispatchAddress,jdbcType=VARCHAR}, #{userRole,jdbcType=VARCHAR}, 
+      #{userOtherDesc,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.ssmarc.entity.DomainUser">
     insert into tb_user
@@ -64,6 +71,9 @@
       </if>
       <if test="userDispatchAddress != null">
         user_dispatch_address,
+      </if>
+      <if test="userRole != null">
+        user_role,
       </if>
       <if test="userOtherDesc != null">
         user_other_desc,
@@ -94,6 +104,9 @@
       <if test="userDispatchAddress != null">
         #{userDispatchAddress,jdbcType=VARCHAR},
       </if>
+      <if test="userRole != null">
+        #{userRole,jdbcType=VARCHAR},
+      </if>
       <if test="userOtherDesc != null">
         #{userOtherDesc,jdbcType=VARCHAR},
       </if>
@@ -123,6 +136,9 @@
       <if test="userDispatchAddress != null">
         user_dispatch_address = #{userDispatchAddress,jdbcType=VARCHAR},
       </if>
+      <if test="userRole != null">
+        user_role = #{userRole,jdbcType=VARCHAR},
+      </if>
       <if test="userOtherDesc != null">
         user_other_desc = #{userOtherDesc,jdbcType=VARCHAR},
       </if>
@@ -138,6 +154,7 @@
       user_urgent = #{userUrgent,jdbcType=VARCHAR},
       user_address = #{userAddress,jdbcType=VARCHAR},
       user_dispatch_address = #{userDispatchAddress,jdbcType=VARCHAR},
+      user_role = #{userRole,jdbcType=VARCHAR},
       user_other_desc = #{userOtherDesc,jdbcType=VARCHAR}
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
