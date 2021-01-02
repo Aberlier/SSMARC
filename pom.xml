@@ -15,15 +15,17 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <srping.version>4.3.2.RELEASE</srping.version>
         <mybatis.version>3.2.8</mybatis.version>
         <slf4j.version>1.7.12</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
         <druid.version>1.0.9</druid.version>
         <shiro.version>1.2.4</shiro.version>
-
+        <junit.version>4.11</junit.version>
+        <!--aop面向切面-->
+        <aspectjweaver.version>1.8.11</aspectjweaver.version>
     </properties>
 
     <dependencies>
@@ -31,7 +33,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>${junit.version}</version>
             <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
             <scope>test</scope>
         </dependency>
@@ -96,6 +98,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${srping.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
         </dependency>
         <!-- spring框架包 -->
         <!-- mybatis框架包 -->
