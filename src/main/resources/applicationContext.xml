@@ -23,7 +23,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <!-- 扫描model包 -->
-        <property name="typeAliasesPackage" value="com.ssmarc.model"/>
+        <property name="typeAliasesPackage" value="com.ssmarc.entity"/>
         <!-- 扫描sql配置文件:mapper需要的xml文件-->
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
@@ -53,10 +53,10 @@
         </tx:attributes>
     </tx:advice>
     <!-- 事务切面注入的配置 -->
-    <aop:config>
+   <!-- <aop:config>
         <aop:pointcut expression="execution(* com.ssmarc.service.*.*(..))" id="txPointcut"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
-    </aop:config>
+    </aop:config>-->
     <!--&lt;!&ndash;开启Shiro注解 shiro提供了认证登录，授权，密码加密等功能 远程SOAP调用，那么就需要对Service进行授权控制&ndash;&gt;
     <bean id="serviceAdvisorAutoProxyCreator" class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
     <bean id="serviceAuthorizationAttributeSourceAdvisor" class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
