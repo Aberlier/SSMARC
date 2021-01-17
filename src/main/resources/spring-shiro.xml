@@ -73,11 +73,13 @@
                 /ssmarc/shirologin/** = anon
                 /ssmarc/regist/** = anon
                 /ssmarc/logout = logout
+                /ssmarc/exportEarlyWarningToExcel = anon
                 /index.jsp = anon
                 /login.jsp = anon
                 <!-- 其他的需要授权访问authc -->
                 <!--/** = authc-->
                 /** = authc
+
             </value>
         </property>
     </bean>
